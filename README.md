@@ -1,60 +1,113 @@
-# 医疗系统 - 处方上传与AI识别
+# 🏥 智能医疗系统
 
-这是一个基于 ThinkPHP 6 开发的医疗系统，主要功能是处方上传和AI智能识别。
+这是一个基于 ThinkPHP 6 开发的综合医疗系统，集成了早期筛查、处方管理、智能提醒、饮食分析等功能，使用阿里巴巴通义千问大语言模型提供AI智能分析。
 
-## 功能特性
+## 🌟 功能特性
 
-### 已实现功能
-- ✅ 处方图片上传
-- ✅ AI智能识别处方内容（复诊时间、用药频次）
-- ✅ 处方信息存储和管理
-- ✅ 用户处方列表查询
-- ✅ 响应式前端界面
+### ✅ 已完成功能
+- **处方管理系统**
+  - 📷 处方图片上传
+  - 🤖 AI智能识别处方内容（复诊时间、用药频次）
+  - 📋 处方信息存储和管理
+  - 📊 用户处方列表查询
 
-### 计划功能
-- 🔄 微信小程序提醒功能
-- 🔄 短信提醒功能
-- 🔄 饮食记录和分析
-- 🔄 营养建议推送
+- **智能提醒系统**
+  - ⏰ 自动生成复诊提醒
+  - 💊 智能用药提醒
+  - 📱 提醒列表管理
+  - 🔔 多种提醒方式支持
 
-## 技术栈
+- **肠癌早期筛查**
+  - 📝 智能问卷调查
+  - 🧠 AI风险评估分析
+  - 📈 个性化健康建议
+  - 💾 筛查记录存储
 
-- **后端**: ThinkPHP 6.x
-- **数据库**: SQLite (可切换到MySQL)
-- **AI服务**: ThinkAI API (支持模拟数据)
-- **前端**: HTML5 + CSS3 + JavaScript
+- **饮食分析系统**
+  - 📸 食物图片识别
+  - 🍎 营养成分分析
+  - 📊 卡路里计算
+  - 💡 个性化饮食建议
 
-## 快速开始
+- **系统特性**
+  - 🎨 响应式前端界面
+  - 🔒 安全的文件上传
+  - 💾 SQLite数据库支持
+  - 🚀 高性能架构设计
 
-### 1. 环境要求
-- PHP >= 7.4
+### 🔄 计划功能
+- 微信小程序集成
+- 短信提醒功能
+- 更多疾病筛查模块
+- 健康数据可视化
+
+## 🛠 技术栈
+
+- **后端框架**: ThinkPHP 6.1
+- **数据库**: SQLite (支持MySQL)
+- **AI服务**: 阿里巴巴通义千问 (Qwen)
+- **前端技术**: HTML5 + CSS3 + JavaScript
+- **开发语言**: PHP 8.0+
+- **依赖管理**: Composer
+- **部署环境**: 宝塔面板 (推荐)
+
+## 🚀 快速开始
+
+### 📋 环境要求
+- PHP 8.0+
 - Composer
 - SQLite 扩展
+- 宝塔面板 7.0+ (生产环境推荐)
 
-### 2. 安装步骤
+### 💻 开发环境部署
 
 ```bash
-# 克隆项目
-git clone <repository-url>
+# 1. 克隆项目
+git clone https://github.com/nanmingfeihong/medicalsystem.git
 cd medicalsystem
 
-# 安装依赖
+# 2. 安装依赖
 composer install
 
-# 初始化数据库
-php init_db_simple.php
+# 3. 启动开发服务器
+php -S localhost:8000 -t public
 
-# 创建上传目录
-mkdir -p public/uploads/prescriptions
-
-# 启动服务器
-php -S localhost:8080 -t public
+# 4. 访问系统
+# 浏览器打开: http://localhost:8000
 ```
 
-### 3. 访问应用
+### 🏭 宝塔面板生产环境部署
 
-- 主页面: http://localhost:8080/prescription
-- 测试页面: 在浏览器中打开 `test_upload.html`
+#### 方式一：自动部署 (推荐)
+```bash
+# 1. 上传项目到网站根目录
+# 2. SSH连接服务器，进入网站目录
+cd /www/wwwroot/your-domain.com
+
+# 3. 运行自动部署脚本
+chmod +x deploy.sh
+./deploy.sh
+
+# 4. 按提示完成宝塔面板配置
+```
+
+#### 方式二：手动部署
+详细步骤请参考：
+- 📖 [宝塔面板部署指南](DEPLOYMENT.md)
+- ⚙️ [宝塔配置清单](bt-config.md)
+
+#### 部署验证
+部署完成后访问：`http://your-domain.com/check.php` 检查系统状态
+
+### 🌐 系统访问
+
+部署成功后，您可以访问以下功能：
+
+- **系统首页**: `http://your-domain.com/`
+- **处方上传**: `http://your-domain.com/prescription/upload`
+- **肠癌筛查**: `http://your-domain.com/colon_screening/`
+- **饮食分析**: `http://your-domain.com/meal/upload`
+- **提醒管理**: `http://your-domain.com/reminder/list`
 
 ## API 接口
 
