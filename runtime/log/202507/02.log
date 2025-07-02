@@ -1,0 +1,70 @@
+[2025-07-02T11:55:15+08:00][error] ThinkAI API调用失败: 网络请求失败: Could not resolve host: api.thinkai.com
+[2025-07-02T11:55:26+08:00][warning] ThinkAI API密钥未配置，使用模拟数据
+[2025-07-02T11:55:59+08:00][error] [0]模板文件不存在:/workspace/medicalsystem/app/view/index/index.php[/workspace/medicalsystem/vendor/topthink/framework/src/think/view/driver/Php.php:81]
+[2025-07-02T11:56:15+08:00][error] [0]模板文件不存在:/workspace/medicalsystem/app/view/prescription/upload.php[/workspace/medicalsystem/vendor/topthink/framework/src/think/view/driver/Php.php:81]
+[2025-07-02T11:56:35+08:00][error] 处方上传失败: SplFileInfo::getSize(): stat failed for /tmp/php03Fgf7
+[2025-07-02T11:57:00+08:00][sql] CONNECT:[ UseTime:0.000181s ] sqlite:./runtime/medical_system.db
+[2025-07-02T11:57:00+08:00][sql] INSERT INTO `prescription` (`user_id` , `prescription_image` , `original_filename` , `file_size` , `status`) VALUES (1 , 'test_prescription.png' , 'test_prescription.png' , 1024 , 0) [ RunTime:0.000483s ]
+[2025-07-02T11:57:00+08:00][sql] PRAGMA table_info( 'prescription' ) [ RunTime:0.000031s ]
+[2025-07-02T11:57:00+08:00][warning] ThinkAI API密钥未配置，使用模拟数据
+[2025-07-02T11:57:42+08:00][sql] CONNECT:[ UseTime:0.000191s ] sqlite:./runtime/medical_system.db
+[2025-07-02T11:57:42+08:00][sql] INSERT INTO `prescription` (`user_id` , `prescription_image` , `original_filename` , `file_size` , `status`) VALUES (1 , 'test_prescription.png' , 'test_prescription.png' , 1024 , 0) [ RunTime:0.000514s ]
+[2025-07-02T11:57:42+08:00][sql] PRAGMA table_info( 'prescription' ) [ RunTime:0.000023s ]
+[2025-07-02T11:57:42+08:00][warning] ThinkAI API密钥未配置，使用模拟数据
+[2025-07-02T11:57:42+08:00][sql] UPDATE `prescription` SET `status` = 1 , `extracted_content` = '{\"follow_up_date\":\"2025-07-09 11:57:42\",\"medication_frequency\":\"每日3次，饭后服用\",\"medication_details\":[{\"name\":\"阿莫西林胶囊\",\"dosage\":\"0.5g\",\"frequency\":\"每日3次\",\"duration\":\"7天\",\"notes\":\"饭后服用\"},{\"name\":\"布洛芬缓释胶囊\",\"dosage\":\"0.3g\",\"frequency\":\"每日2次\",\"duration\":\"5天\",\"notes\":\"疼痛时服用\"}],\"doctor_name\":\"张医生\",\"hospital_name\":\"市人民医院\",\"diagnosis\":\"急性上呼吸道感染\",\"confidence\":0.95,\"raw_text\":\"处方单原始文本内容...\"}' , `follow_up_date` = '2025-07-09 11:57:42' , `medication_frequency` = '每日3次，饭后服用' , `medication_details` = '[{\"name\":\"阿莫西林胶囊\",\"dosage\":\"0.5g\",\"frequency\":\"每日3次\",\"duration\":\"7天\",\"notes\":\"饭后服用\"},{\"name\":\"布洛芬缓释胶囊\",\"dosage\":\"0.3g\",\"frequency\":\"每日2次\",\"duration\":\"5天\",\"notes\":\"疼痛时服用\"}]' , `update_time` = '1751428662' WHERE  `id` = 1 [ RunTime:0.000166s ]
+[2025-07-02T11:57:42+08:00][sql] SELECT * FROM `prescription` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000064s ]
+[2025-07-02T11:57:56+08:00][error] 处方上传失败: SplFileInfo::getSize(): stat failed for /tmp/phpkh7lLf
+[2025-07-02T11:58:30+08:00][error] 处方上传失败: SplFileInfo::getSize(): stat failed for /tmp/phpqQ9mpr
+[2025-07-02T11:59:30+08:00][error] 处方上传失败: SplFileInfo::getSize(): stat failed for /tmp/phpILPrlq
+[2025-07-02T11:59:44+08:00][error] 处方上传失败: SplFileInfo::getSize(): stat failed for /tmp/phpx6AbjN
+[2025-07-02T11:59:55+08:00][sql] CONNECT:[ UseTime:0.000180s ] sqlite:./runtime/medical_system.db
+[2025-07-02T11:59:55+08:00][sql] INSERT INTO `prescription` (`user_id` , `prescription_image` , `original_filename` , `file_size` , `status` , `create_time` , `update_time`) VALUES (1 , '20250702115955_debug.png' , 'test_prescription.png' , 70 , 0 , '2025-07-02 11:59:55.529510' , '2025-07-02 11:59:55.529516') [ RunTime:0.000479s ]
+[2025-07-02T11:59:55+08:00][sql] PRAGMA table_info( 'prescription' ) [ RunTime:0.000026s ]
+[2025-07-02T11:59:55+08:00][warning] ThinkAI API密钥未配置，使用模拟数据
+[2025-07-02T11:59:55+08:00][sql] UPDATE `prescription` SET `status` = 1 , `extracted_content` = '{\"follow_up_date\":\"2025-07-09 11:59:55\",\"medication_frequency\":\"每日3次，饭后服用\",\"medication_details\":[{\"name\":\"阿莫西林胶囊\",\"dosage\":\"0.5g\",\"frequency\":\"每日3次\",\"duration\":\"7天\",\"notes\":\"饭后服用\"},{\"name\":\"布洛芬缓释胶囊\",\"dosage\":\"0.3g\",\"frequency\":\"每日2次\",\"duration\":\"5天\",\"notes\":\"疼痛时服用\"}],\"doctor_name\":\"张医生\",\"hospital_name\":\"市人民医院\",\"diagnosis\":\"急性上呼吸道感染\",\"confidence\":0.95,\"raw_text\":\"处方单原始文本内容...\"}' , `follow_up_date` = '2025-07-09 11:59:55' , `medication_frequency` = '每日3次，饭后服用' , `medication_details` = '[{\"name\":\"阿莫西林胶囊\",\"dosage\":\"0.5g\",\"frequency\":\"每日3次\",\"duration\":\"7天\",\"notes\":\"饭后服用\"},{\"name\":\"布洛芬缓释胶囊\",\"dosage\":\"0.3g\",\"frequency\":\"每日2次\",\"duration\":\"5天\",\"notes\":\"疼痛时服用\"}]' , `update_time` = '2025-07-02 11:59:55.543866' WHERE  `id` = 2 [ RunTime:0.000176s ]
+[2025-07-02T11:59:55+08:00][sql] SELECT * FROM `prescription` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000071s ]
+[2025-07-02T12:00:01+08:00][error] 获取处方详情失败: SQLSTATE[HY000] [14] unable to open database file
+[2025-07-02T12:00:06+08:00][error] 获取处方列表失败: SQLSTATE[HY000] [14] unable to open database file
+[2025-07-02T12:00:29+08:00][error] [0]Too few arguments to function app\BaseController::__construct(), 0 passed in /workspace/medicalsystem/test_controller.php on line 21 and exactly 1 expected[/workspace/medicalsystem/app/BaseController.php:44]
+[2025-07-02T12:01:01+08:00][error] 获取处方详情失败: SQLSTATE[HY000] [14] unable to open database file
+[2025-07-02T12:01:01+08:00][error] 获取处方列表失败: SQLSTATE[HY000] [14] unable to open database file
+[2025-07-02T12:01:01+08:00][error] 处方上传失败: SplFileInfo::getSize(): stat failed for /tmp/phpZVdArJ
+[2025-07-02T12:02:13+08:00][sql] CONNECT:[ UseTime:0.000117s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T12:02:13+08:00][sql] SELECT COUNT(*) AS think_count FROM `prescription` LIMIT 1 [ RunTime:0.000246s ]
+[2025-07-02T12:02:18+08:00][sql] CONNECT:[ UseTime:0.000096s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T12:02:18+08:00][sql] SELECT * FROM `prescription` LIMIT 5 [ RunTime:0.000226s ]
+[2025-07-02T12:02:22+08:00][sql] CONNECT:[ UseTime:0.000185s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T12:02:22+08:00][sql] SELECT COUNT(*) AS think_count FROM `prescription` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000272s ]
+[2025-07-02T12:02:22+08:00][sql] SELECT * FROM `prescription` WHERE  `user_id` = 1 ORDER BY `create_time` DESC LIMIT 10 OFFSET 0 [ RunTime:0.000122s ]
+[2025-07-02T12:02:22+08:00][error] [0]DateTime::__construct(): Argument #1 ($datetime) must be of type string, int given[/workspace/medicalsystem/vendor/topthink/think-orm/src/model/concern/TimeStamp.php:197]
+[2025-07-02T12:02:23+08:00][sql] CONNECT:[ UseTime:0.000090s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T12:02:23+08:00][sql] SELECT * FROM `prescription` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000242s ]
+[2025-07-02T12:02:23+08:00][sql] SELECT * FROM `user` WHERE  `id` = 1 [ RunTime:0.000067s ]
+[2025-07-02T12:02:27+08:00][sql] CONNECT:[ UseTime:0.000093s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T12:02:27+08:00][sql] SELECT COUNT(*) AS think_count FROM `prescription` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000267s ]
+[2025-07-02T12:02:27+08:00][sql] SELECT * FROM `prescription` WHERE  `user_id` = 1 ORDER BY `create_time` DESC LIMIT 10 OFFSET 0 [ RunTime:0.000120s ]
+[2025-07-02T12:02:27+08:00][error] [0]DateTime::__construct(): Argument #1 ($datetime) must be of type string, int given[/workspace/medicalsystem/vendor/topthink/think-orm/src/model/concern/TimeStamp.php:197]
+[2025-07-02T12:02:37+08:00][sql] CONNECT:[ UseTime:0.000092s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T12:02:37+08:00][sql] SELECT COUNT(*) AS think_count FROM `prescription` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000238s ]
+[2025-07-02T12:02:37+08:00][sql] SELECT * FROM `prescription` WHERE  `user_id` = 1 ORDER BY `create_time` DESC LIMIT 10 OFFSET 0 [ RunTime:0.000104s ]
+[2025-07-02T12:02:37+08:00][error] [0]DateTime::__construct(): Argument #1 ($datetime) must be of type string, int given[/workspace/medicalsystem/vendor/topthink/think-orm/src/model/concern/TimeStamp.php:197]
+[2025-07-02T12:02:52+08:00][sql] CONNECT:[ UseTime:0.000190s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T12:02:52+08:00][sql] SELECT COUNT(*) AS think_count FROM `prescription` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000225s ]
+[2025-07-02T12:02:52+08:00][sql] SELECT * FROM `prescription` WHERE  `user_id` = 1 ORDER BY `create_time` DESC LIMIT 10 OFFSET 0 [ RunTime:0.000065s ]
+[2025-07-02T12:03:04+08:00][sql] CONNECT:[ UseTime:0.000091s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T12:03:04+08:00][sql] SELECT COUNT(*) AS think_count FROM `prescription` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000227s ]
+[2025-07-02T12:03:04+08:00][sql] SELECT * FROM `prescription` WHERE  `user_id` = 1 ORDER BY `create_time` DESC LIMIT 10 OFFSET 0 [ RunTime:0.000077s ]
+[2025-07-02T12:04:08+08:00][error] 处方上传失败: SplFileInfo::getSize(): stat failed for /tmp/phpEOFdBl
+[2025-07-02T12:04:30+08:00][sql] CONNECT:[ UseTime:0.000172s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T12:04:30+08:00][sql] INSERT INTO `prescription` (`user_id` , `prescription_image` , `original_filename` , `file_size` , `status` , `create_time` , `update_time`) VALUES (1 , '20250702120430_final_test.png' , 'test_prescription.png' , 70 , 0 , '2025-07-02 12:04:30' , '2025-07-02 12:04:30') [ RunTime:0.000489s ]
+[2025-07-02T12:04:30+08:00][sql] PRAGMA table_info( 'prescription' ) [ RunTime:0.000031s ]
+[2025-07-02T12:04:30+08:00][warning] ThinkAI API密钥未配置，使用模拟数据
+[2025-07-02T12:04:30+08:00][sql] UPDATE `prescription` SET `status` = 1 , `extracted_content` = '{\"follow_up_date\":\"2025-07-09 12:04:30\",\"medication_frequency\":\"每日3次，饭后服用\",\"medication_details\":[{\"name\":\"阿莫西林胶囊\",\"dosage\":\"0.5g\",\"frequency\":\"每日3次\",\"duration\":\"7天\",\"notes\":\"饭后服用\"},{\"name\":\"布洛芬缓释胶囊\",\"dosage\":\"0.3g\",\"frequency\":\"每日2次\",\"duration\":\"5天\",\"notes\":\"疼痛时服用\"}],\"doctor_name\":\"张医生\",\"hospital_name\":\"市人民医院\",\"diagnosis\":\"急性上呼吸道感染\",\"confidence\":0.95,\"raw_text\":\"处方单原始文本内容...\"}' , `follow_up_date` = '2025-07-09 12:04:30' , `medication_frequency` = '每日3次，饭后服用' , `medication_details` = '[{\"name\":\"阿莫西林胶囊\",\"dosage\":\"0.5g\",\"frequency\":\"每日3次\",\"duration\":\"7天\",\"notes\":\"饭后服用\"},{\"name\":\"布洛芬缓释胶囊\",\"dosage\":\"0.3g\",\"frequency\":\"每日2次\",\"duration\":\"5天\",\"notes\":\"疼痛时服用\"}]' WHERE  `id` = 3 [ RunTime:0.000185s ]
+[2025-07-02T12:04:30+08:00][sql] SELECT * FROM `prescription` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000062s ]
+[2025-07-02T12:04:35+08:00][sql] CONNECT:[ UseTime:0.000108s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T12:04:35+08:00][sql] SELECT COUNT(*) AS think_count FROM `prescription` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000234s ]
+[2025-07-02T12:04:35+08:00][sql] SELECT * FROM `prescription` WHERE  `user_id` = 1 ORDER BY `create_time` DESC LIMIT 10 OFFSET 0 [ RunTime:0.000066s ]
+[2025-07-02T12:04:40+08:00][sql] CONNECT:[ UseTime:0.000093s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T12:04:40+08:00][sql] SELECT * FROM `prescription` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000243s ]
+[2025-07-02T12:04:40+08:00][sql] SELECT * FROM `user` WHERE  `id` = 1 [ RunTime:0.000048s ]
+[2025-07-02T12:04:58+08:00][error] [0]Call to undefined method app\controller\Prescription::success()[/workspace/medicalsystem/app/controller/Prescription.php:67]

@@ -1,0 +1,99 @@
+[Wed Jul  2 03:57:49 2025] PHP 8.2.28 Development Server (http://localhost:8080) started
+[Wed Jul  2 03:57:56 2025] 127.0.0.1:46474 Accepted
+[Wed Jul  2 03:57:56 2025] 127.0.0.1:46474 [200]: POST /prescription/upload
+[Wed Jul  2 03:57:56 2025] 127.0.0.1:46474 Closing
+[Wed Jul  2 03:59:30 2025] 127.0.0.1:40568 Accepted
+[Wed Jul  2 03:59:30 2025] 127.0.0.1:40568 [200]: POST /prescription/upload
+[Wed Jul  2 03:59:30 2025] 127.0.0.1:40568 Closing
+[Wed Jul  2 04:00:01 2025] 127.0.0.1:58838 Accepted
+[Wed Jul  2 04:00:01 2025] 127.0.0.1:58838 [200]: GET /prescription/detail?id=2
+[Wed Jul  2 04:00:01 2025] 127.0.0.1:58838 Closing
+[Wed Jul  2 04:00:06 2025] 127.0.0.1:35104 Accepted
+[Wed Jul  2 04:00:06 2025] 127.0.0.1:35104 [200]: GET /prescription/list?user_id=1
+[Wed Jul  2 04:00:06 2025] 127.0.0.1:35104 Closing
+[Wed Jul  2 04:01:01 2025] 127.0.0.1:48364 Accepted
+[Wed Jul  2 04:01:01 2025] 127.0.0.1:48364 [200]: GET /prescription
+[Wed Jul  2 04:01:01 2025] 127.0.0.1:48364 Closing
+[Wed Jul  2 04:01:01 2025] 127.0.0.1:48370 Accepted
+[Wed Jul  2 04:01:01 2025] 127.0.0.1:48370 [200]: GET /prescription/detail?id=2
+[Wed Jul  2 04:01:01 2025] 127.0.0.1:48370 Closing
+[Wed Jul  2 04:01:01 2025] 127.0.0.1:48386 Accepted
+[Wed Jul  2 04:01:01 2025] 127.0.0.1:48386 [200]: GET /prescription/list?user_id=1
+[Wed Jul  2 04:01:01 2025] 127.0.0.1:48386 Closing
+[Wed Jul  2 04:01:01 2025] 127.0.0.1:48398 Accepted
+[Wed Jul  2 04:01:01 2025] 127.0.0.1:48398 [200]: POST /prescription/upload
+[Wed Jul  2 04:01:01 2025] 127.0.0.1:48398 Closing
+[Wed Jul  2 04:01:31 2025] 127.0.0.1:52138 Accepted
+[Wed Jul  2 04:01:31 2025] 127.0.0.1:52138 [200]: GET /test
+[Wed Jul  2 04:01:31 2025] 127.0.0.1:52138 Closing
+[Wed Jul  2 04:01:36 2025] 127.0.0.1:39126 Accepted
+[Wed Jul  2 04:01:36 2025] 127.0.0.1:39126 [200]: GET /test/database
+[Wed Jul  2 04:01:36 2025] 127.0.0.1:39126 Closing
+[Wed Jul  2 04:02:13 2025] 127.0.0.1:42840 Accepted
+[Wed Jul  2 04:02:13 2025] 127.0.0.1:42840 [200]: GET /test/database
+[Wed Jul  2 04:02:13 2025] 127.0.0.1:42840 Closing
+[Wed Jul  2 04:02:18 2025] 127.0.0.1:42856 Accepted
+[Wed Jul  2 04:02:18 2025] 127.0.0.1:42856 [200]: GET /test/prescription
+[Wed Jul  2 04:02:18 2025] 127.0.0.1:42856 Closing
+[Wed Jul  2 04:02:23 2025] 127.0.0.1:56900 Accepted
+[Wed Jul  2 04:02:23 2025] 127.0.0.1:56900 [200]: GET /prescription/detail?id=2
+[Wed Jul  2 04:02:23 2025] 127.0.0.1:56900 Closing
+[Wed Jul  2 04:02:27 2025] 127.0.0.1:56916 Accepted
+[Wed Jul  2 04:02:27 2025] 127.0.0.1:56916 [500]: GET /prescription/list?user_id=1
+[Wed Jul  2 04:02:27 2025] 127.0.0.1:56916 Closing
+[Wed Jul  2 04:03:04 2025] 127.0.0.1:54986 Accepted
+[Wed Jul  2 04:03:04 2025] 127.0.0.1:54986 [200]: GET /prescription/list?user_id=1
+[Wed Jul  2 04:03:04 2025] 127.0.0.1:54986 Closing
+[Wed Jul  2 04:04:08 2025] 127.0.0.1:43168 Accepted
+[Wed Jul  2 04:04:08 2025] 127.0.0.1:43168 [200]: POST /prescription/upload
+[Wed Jul  2 04:04:08 2025] 127.0.0.1:43168 Closing
+[Wed Jul  2 04:04:35 2025] 127.0.0.1:35284 Accepted
+[Wed Jul  2 04:04:35 2025] 127.0.0.1:35284 [200]: GET /prescription/list?user_id=1
+[Wed Jul  2 04:04:35 2025] 127.0.0.1:35284 Closing
+[Wed Jul  2 04:04:40 2025] 127.0.0.1:35292 Accepted
+[Wed Jul  2 04:04:40 2025] 127.0.0.1:35292 [200]: GET /prescription/detail?id=3
+[Wed Jul  2 04:04:40 2025] 127.0.0.1:35292 Closing
+[Wed Jul  2 04:04:45 2025] 127.0.0.1:57456 Accepted
+[Wed Jul  2 04:04:45 2025] 127.0.0.1:57456 [200]: GET /prescription
+[Wed Jul  2 04:04:45 2025] 127.0.0.1:57456 Closing
+940 [200]: GET /prescription/list
+[Wed Jul  2 04:02:52 2025] 127.0.0.1:57940 Closing
+[Wed Jul  2 04:02:57 2025] 127.0.0.1:57956 Accepted
+[Wed Jul  2 04:02:57 2025] 127.0.0.1:57956 [200]: GET /prescription/detail/2
+[Wed Jul  2 04:02:57 2025] 127.0.0.1:57956 Closing
+[Wed Jul  2 04:03:07 2025] 127.0.0.1:34302 Accepted
+[Wed Jul  2 04:03:07 2025] 127.0.0.1:34302 [200]: GET /prescription/detail/2
+[Wed Jul  2 04:03:07 2025] 127.0.0.1:34302 Closing
+[Wed Jul  2 04:03:24 2025] 127.0.0.1:50344 Accepted
+[Wed Jul  2 04:03:24 2025] 127.0.0.1:50344 [200]: GET /prescription/detail/2
+[Wed Jul  2 04:03:24 2025] 127.0.0.1:50344 Closing
+[Wed Jul  2 04:03:40 2025] 127.0.0.1:44028 Accepted
+[Wed Jul  2 04:03:40 2025] 127.0.0.1:44028 [200]: GET /test/123
+[Wed Jul  2 04:03:40 2025] 127.0.0.1:44028 Closing
+[Wed Jul  2 04:03:55 2025] 127.0.0.1:39496 Accepted
+[Wed Jul  2 04:03:55 2025] 127.0.0.1:39496 [200]: GET /prescription/detail/2
+[Wed Jul  2 04:03:55 2025] 127.0.0.1:39496 Closing
+[Wed Jul  2 04:04:12 2025] 127.0.0.1:41240 Accepted
+[Wed Jul  2 04:04:12 2025] 127.0.0.1:41240 [200]: GET /prescription/detail/2
+[Wed Jul  2 04:04:12 2025] 127.0.0.1:41240 Closing
+[Wed Jul  2 04:04:58 2025] 127.0.0.1:39118 Accepted
+[Wed Jul  2 04:04:58 2025] 127.0.0.1:39118 [500]: GET /prescription/test/123
+[Wed Jul  2 04:04:58 2025] 127.0.0.1:39118 Closing
+[Wed Jul  2 04:05:10 2025] 127.0.0.1:46890 Accepted
+[Wed Jul  2 04:05:10 2025] 127.0.0.1:46890 [200]: GET /prescription/test/123
+[Wed Jul  2 04:05:10 2025] 127.0.0.1:46890 Closing
+[Wed Jul  2 04:06:01 2025] 127.0.0.1:39520 Accepted
+[Wed Jul  2 04:06:01 2025] 127.0.0.1:39520 [200]: GET /prescription/detail/2
+[Wed Jul  2 04:06:01 2025] 127.0.0.1:39520 Closing
+[Wed Jul  2 04:06:17 2025] 127.0.0.1:50330 Accepted
+[Wed Jul  2 04:06:17 2025] 127.0.0.1:50330 [200]: GET /prescription/detail/2
+[Wed Jul  2 04:06:17 2025] 127.0.0.1:50330 Closing
+[Wed Jul  2 04:06:28 2025] 127.0.0.1:59724 Accepted
+[Wed Jul  2 04:06:28 2025] 127.0.0.1:59724 [200]: GET /prescription/detail/999
+[Wed Jul  2 04:06:28 2025] 127.0.0.1:59724 Closing
+[Wed Jul  2 04:06:45 2025] 127.0.0.1:44330 Accepted
+[Wed Jul  2 04:06:45 2025] 127.0.0.1:44330 [200]: GET /prescription/detail/2
+[Wed Jul  2 04:06:45 2025] 127.0.0.1:44330 Closing
+[Wed Jul  2 04:07:01 2025] 127.0.0.1:57012 Accepted
+[Wed Jul  2 04:07:01 2025] 127.0.0.1:57012 [200]: GET /prescription/detail/2
+[Wed Jul  2 04:07:01 2025] 127.0.0.1:57012 Closing
