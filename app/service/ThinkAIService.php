@@ -15,12 +15,17 @@ class ThinkAIService
     private $apiKey;
     private $timeout;
     
+    private $qwenService;
+    
     public function __construct()
     {
         // 从配置文件或环境变量获取API配置
         $this->apiUrl = env('THINKAI_API_URL', 'https://api.thinkai.com/v1/ocr/prescription');
         $this->apiKey = env('THINKAI_API_KEY', '');
         $this->timeout = 30; // 30秒超时
+        
+        // 初始化通义千问服务
+        $this->qwenService = new QwenService();
     }
     
     /**
@@ -36,12 +41,39 @@ class ThinkAIService
             throw new \Exception('图片文件不存在');
         }
         
-        // 如果没有配置API密钥，使用模拟数据
-        if (empty($this->apiKey)) {
-            Log::warning('ThinkAI API密钥未配置，使用模拟数据');
+        try {
+            Log::info('使用通义千问提取处方信息: ' . $imagePath);
+            
+            // 优先使用通义千问服务
+            $result = $this->qwenService->extractPrescriptionInfo($imagePath);
+            
+            if ($result['success']) {
+                Log::info('通义千问处方信息提取成功');
+                return $result['data'];
+            } else {
+                Log::warning('通义千问提取失败，尝试备用方案: ' . ($result['error'] ?? '未知错误'));
+                
+                // 如果通义千问失败，尝试原有API（如果配置了）
+                if (!empty($this->apiKey)) {
+                    return $this->extractWithOriginalAPI($imagePath);
+                } else {
+                    Log::warning('无备用API配置，使用模拟数据');
+                    return $this->getMockData();
+                }
+            }
+            
+        } catch (\Exception $e) {
+            Log::error('处方信息提取失败: ' . $e->getMessage());
+            // 异常时返回模拟数据
             return $this->getMockData();
         }
-        
+    }
+    
+    /**
+     * 使用原有API提取处方信息（备用方案）
+     */
+    private function extractWithOriginalAPI(string $imagePath): array
+    {
         try {
             // 准备请求数据
             $postData = [
@@ -63,8 +95,36 @@ class ThinkAIService
             return $this->parseResponse($response);
             
         } catch (\Exception $e) {
-            Log::error('ThinkAI API调用失败: ' . $e->getMessage());
-            throw new \Exception('AI处方识别失败: ' . $e->getMessage());
+            Log::error('原有API调用失败: ' . $e->getMessage());
+            return $this->getMockData();
+        }
+    }
+    
+    /**
+     * 餐食图片识别和营养分析
+     */
+    public function analyzeFoodImage(string $imagePath): array
+    {
+        if (!file_exists($imagePath)) {
+            throw new \Exception('图片文件不存在');
+        }
+        
+        try {
+            Log::info('使用通义千问分析餐食图片: ' . $imagePath);
+            
+            $result = $this->qwenService->analyzeFoodImage($imagePath);
+            
+            if ($result['success']) {
+                Log::info('餐食分析成功');
+                return $result['data'];
+            } else {
+                Log::error('通义千问餐食分析失败: ' . ($result['error'] ?? '未知错误'));
+                throw new \Exception('餐食分析失败: ' . ($result['error'] ?? '未知错误'));
+            }
+            
+        } catch (\Exception $e) {
+            Log::error('餐食分析失败: ' . $e->getMessage());
+            throw new \Exception('餐食分析失败: ' . $e->getMessage());
         }
     }
     

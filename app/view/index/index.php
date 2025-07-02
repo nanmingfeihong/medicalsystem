@@ -162,12 +162,12 @@
         <div class="content">
             <div class="features">
                 <div class="feature-card">
-                    <div class="feature-icon">📋</div>
-                    <div class="feature-title">早期筛查</div>
+                    <div class="feature-icon">🩺</div>
+                    <div class="feature-title">肠癌早筛</div>
                     <div class="feature-desc">
-                        基于问卷的癌症早期筛查系统，通过智能分析为用户提供健康风险评估
+                        基于问卷的肠癌早期筛查系统，通过AI智能分析为用户提供健康风险评估
                     </div>
-                    <a href="#" class="feature-btn">开始筛查</a>
+                    <a href="/colon_screening/" class="feature-btn">开始筛查</a>
                 </div>
                 
                 <div class="feature-card">

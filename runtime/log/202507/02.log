@@ -68,3 +68,310 @@
 [2025-07-02T12:04:40+08:00][sql] SELECT * FROM `prescription` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000243s ]
 [2025-07-02T12:04:40+08:00][sql] SELECT * FROM `user` WHERE  `id` = 1 [ RunTime:0.000048s ]
 [2025-07-02T12:04:58+08:00][error] [0]Call to undefined method app\controller\Prescription::success()[/workspace/medicalsystem/app/controller/Prescription.php:67]
+[2025-07-02T12:07:40+08:00][info] 处方详情方法调用，参数: '2'
+[2025-07-02T12:07:40+08:00][sql] CONNECT:[ UseTime:0.000168s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T12:07:40+08:00][sql] SELECT * FROM `prescription` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000277s ]
+[2025-07-02T12:07:40+08:00][sql] SELECT * FROM `user` WHERE  `id` = 1 [ RunTime:0.000080s ]
+[2025-07-02T12:09:50+08:00][info] 处方详情方法调用，参数: '2'
+[2025-07-02T12:09:50+08:00][sql] CONNECT:[ UseTime:0.000169s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T12:09:50+08:00][sql] SELECT * FROM `prescription` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000281s ]
+[2025-07-02T12:09:50+08:00][sql] SELECT * FROM `user` WHERE  `id` = 1 [ RunTime:0.000073s ]
+[2025-07-02T12:10:00+08:00][info] 处方详情方法调用，参数: '1'
+[2025-07-02T12:10:00+08:00][sql] CONNECT:[ UseTime:0.000094s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T12:10:00+08:00][sql] SELECT * FROM `prescription` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000287s ]
+[2025-07-02T12:10:00+08:00][sql] SELECT * FROM `user` WHERE  `id` = 1 [ RunTime:0.000060s ]
+[2025-07-02T12:10:04+08:00][info] 处方详情方法调用，参数: '999'
+[2025-07-02T12:10:04+08:00][sql] CONNECT:[ UseTime:0.000110s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T12:10:04+08:00][sql] SELECT * FROM `prescription` WHERE  `id` = 999 LIMIT 1 [ RunTime:0.000231s ]
+[2025-07-02T12:11:46+08:00][error] [0]模板文件不存在:/workspace/medicalsystem/app/view/prescription/detail.php[/workspace/medicalsystem/vendor/topthink/framework/src/think/view/driver/Php.php:81]
+[2025-07-02T12:12:57+08:00][info] 获取处方详情，ID: 2
+[2025-07-02T12:12:57+08:00][sql] CONNECT:[ UseTime:0.000126s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T12:12:57+08:00][sql] SELECT * FROM `prescription` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000319s ]
+[2025-07-02T12:12:57+08:00][sql] SELECT * FROM `user` WHERE  `id` = 1 [ RunTime:0.000076s ]
+[2025-07-02T12:13:26+08:00][sql] CONNECT:[ UseTime:0.000092s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T12:13:26+08:00][sql] SELECT COUNT(*) AS think_count FROM `prescription` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000227s ]
+[2025-07-02T12:13:26+08:00][error] 获取处方列表失败: SQLSTATE[HY000]: General error: 1 no such column: created_at
+[2025-07-02T12:13:26+08:00][error] [0]Call to undefined method app\controller\Prescription::error()[/workspace/medicalsystem/app/controller/Prescription.php:148]
+[2025-07-02T12:13:44+08:00][sql] CONNECT:[ UseTime:0.000094s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T12:13:44+08:00][sql] SELECT COUNT(*) AS think_count FROM `prescription` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000233s ]
+[2025-07-02T12:13:44+08:00][error] 获取处方列表失败: SQLSTATE[HY000]: General error: 1 no such column: created_at
+[2025-07-02T12:14:10+08:00][sql] CONNECT:[ UseTime:0.000092s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T12:14:10+08:00][sql] SELECT COUNT(*) AS think_count FROM `prescription` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000226s ]
+[2025-07-02T12:14:10+08:00][sql] SELECT * FROM `prescription` WHERE  `user_id` = 1 ORDER BY `create_time` DESC LIMIT 10 OFFSET 0 [ RunTime:0.000121s ]
+[2025-07-02T12:14:10+08:00][error] [0]Call to undefined method app\controller\Prescription::paginate()[/workspace/medicalsystem/app/controller/Prescription.php:139]
+[2025-07-02T12:14:27+08:00][sql] CONNECT:[ UseTime:0.000093s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T12:14:27+08:00][sql] SELECT COUNT(*) AS think_count FROM `prescription` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000228s ]
+[2025-07-02T12:14:27+08:00][sql] SELECT * FROM `prescription` WHERE  `user_id` = 1 ORDER BY `create_time` DESC LIMIT 10 OFFSET 0 [ RunTime:0.000074s ]
+[2025-07-02T12:14:36+08:00][info] 获取处方详情，ID: 2
+[2025-07-02T12:14:36+08:00][sql] CONNECT:[ UseTime:0.000112s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T12:14:36+08:00][sql] SELECT * FROM `prescription` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000301s ]
+[2025-07-02T12:14:36+08:00][sql] SELECT * FROM `user` WHERE  `id` = 1 [ RunTime:0.000059s ]
+[2025-07-02T12:15:55+08:00][sql] CONNECT:[ UseTime:0.000098s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T12:15:55+08:00][sql] SELECT COUNT(*) AS think_count FROM `prescription` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000329s ]
+[2025-07-02T12:15:55+08:00][sql] SELECT * FROM `prescription` WHERE  `user_id` = 1 ORDER BY `create_time` DESC LIMIT 6 OFFSET 0 [ RunTime:0.000154s ]
+[2025-07-02T12:16:08+08:00][info] 获取处方详情，ID: 3
+[2025-07-02T12:16:08+08:00][sql] CONNECT:[ UseTime:0.000096s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T12:16:08+08:00][sql] SELECT * FROM `prescription` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000234s ]
+[2025-07-02T12:16:08+08:00][sql] SELECT * FROM `user` WHERE  `id` = 1 [ RunTime:0.000048s ]
+[2025-07-02T12:16:17+08:00][sql] CONNECT:[ UseTime:0.000096s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T12:16:17+08:00][sql] SELECT COUNT(*) AS think_count FROM `prescription` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000240s ]
+[2025-07-02T12:16:17+08:00][sql] SELECT * FROM `prescription` WHERE  `user_id` = 1 ORDER BY `create_time` DESC LIMIT 10 OFFSET 0 [ RunTime:0.000065s ]
+[2025-07-02T12:16:32+08:00][sql] CONNECT:[ UseTime:0.000125s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T12:16:32+08:00][sql] SELECT COUNT(*) AS think_count FROM `prescription` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000317s ]
+[2025-07-02T12:16:32+08:00][sql] SELECT * FROM `prescription` WHERE  `user_id` = 1 ORDER BY `create_time` DESC LIMIT 6 OFFSET 0 [ RunTime:0.000102s ]
+[2025-07-02T12:16:44+08:00][info] 获取处方详情，ID: 3
+[2025-07-02T12:16:44+08:00][sql] CONNECT:[ UseTime:0.000100s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T12:16:44+08:00][sql] SELECT * FROM `prescription` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000293s ]
+[2025-07-02T12:16:44+08:00][sql] SELECT * FROM `user` WHERE  `id` = 1 [ RunTime:0.000048s ]
+[2025-07-02T12:16:51+08:00][sql] CONNECT:[ UseTime:0.000125s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T12:16:51+08:00][sql] SELECT COUNT(*) AS think_count FROM `prescription` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000363s ]
+[2025-07-02T12:16:51+08:00][sql] SELECT * FROM `prescription` WHERE  `user_id` = 1 ORDER BY `create_time` DESC LIMIT 6 OFFSET 0 [ RunTime:0.000101s ]
+[2025-07-02T12:25:08+08:00][error] [0]模板文件不存在:/workspace/medicalsystem/app/view/index/index.php[/workspace/medicalsystem/vendor/topthink/framework/src/think/view/driver/Php.php:81]
+[2025-07-02T12:26:02+08:00][error] [0]模板文件不存在:/workspace/medicalsystem/app/view/index/index.php[/workspace/medicalsystem/vendor/topthink/framework/src/think/view/driver/Php.php:81]
+[2025-07-02T12:27:39+08:00][error] [0]模板文件不存在:/workspace/medicalsystem/app/view/index/index.php[/workspace/medicalsystem/vendor/topthink/framework/src/think/view/driver/Php.php:81]
+[2025-07-02T12:32:34+08:00][sql] CONNECT:[ UseTime:0.000107s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T12:32:34+08:00][sql] SELECT COUNT(*) AS think_count FROM `reminder` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000301s ]
+[2025-07-02T12:34:40+08:00][sql] CONNECT:[ UseTime:0.000100s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T12:34:40+08:00][sql] INSERT INTO `prescription` (`user_id` , `prescription_image` , `original_filename` , `file_size` , `status`) VALUES (1 , '20250702123440_6864b6e054ab5.png' , 'test_prescription2.png' , 70 , 0) [ RunTime:0.000383s ]
+[2025-07-02T12:34:40+08:00][sql] PRAGMA table_info( 'prescription' ) [ RunTime:0.000019s ]
+[2025-07-02T12:34:40+08:00][sql] UPDATE `prescription` SET `status` = 1 , `extracted_content` = '{\"follow_up_date\":\"2025-07-09 12:34:40\",\"medication_frequency\":\"每日3次，饭后服用\",\"medication_details\":[{\"name\":\"阿莫西林胶囊\",\"dosage\":\"0.5g\",\"frequency\":\"每日3次\",\"duration\":\"7天\",\"notes\":\"饭后服用\"},{\"name\":\"布洛芬缓释胶囊\",\"dosage\":\"0.3g\",\"frequency\":\"每日2次\",\"duration\":\"5天\",\"notes\":\"疼痛时服用\"}],\"doctor_name\":\"张医生\",\"hospital_name\":\"市人民医院\",\"diagnosis\":\"急性上呼吸道感染\",\"confidence\":0.95,\"raw_text\":\"处方单原始文本内容...\"}' , `follow_up_date` = '2025-07-09 12:34:40' , `medication_frequency` = '每日3次，饭后服用' , `medication_details` = '[{\"name\":\"阿莫西林胶囊\",\"dosage\":\"0.5g\",\"frequency\":\"每日3次\",\"duration\":\"7天\",\"notes\":\"饭后服用\"},{\"name\":\"布洛芬缓释胶囊\",\"dosage\":\"0.3g\",\"frequency\":\"每日2次\",\"duration\":\"5天\",\"notes\":\"疼痛时服用\"}]' WHERE  `id` = 5 [ RunTime:0.000233s ]
+[2025-07-02T12:34:40+08:00][warning] ThinkAI API密钥未配置，使用模拟数据
+[2025-07-02T12:34:40+08:00][info] 处方信息提取成功
+[2025-07-02T12:34:40+08:00][info] 处方提醒创建成功
+[2025-07-02T12:34:40+08:00][error] 创建复诊提醒失败: SQLSTATE[HY000]: General error: 1 table reminder has no column named title
+[2025-07-02T12:34:40+08:00][error] 创建用药提醒失败: Undefined array key "instructions"
+[2025-07-02T12:35:09+08:00][error] [0]模板文件不存在:/workspace/medicalsystem/app/view/index/index.php[/workspace/medicalsystem/vendor/topthink/framework/src/think/view/driver/Php.php:81]
+[2025-07-02T12:36:21+08:00][sql] CONNECT:[ UseTime:0.000125s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T12:36:21+08:00][sql] INSERT INTO `prescription` (`user_id` , `prescription_image` , `original_filename` , `file_size` , `status`) VALUES (1 , '20250702123621_6864b7456bfc7.png' , 'test_prescription3.png' , 70 , 0) [ RunTime:0.000526s ]
+[2025-07-02T12:36:21+08:00][sql] PRAGMA table_info( 'prescription' ) [ RunTime:0.000024s ]
+[2025-07-02T12:36:21+08:00][sql] UPDATE `prescription` SET `status` = 1 , `extracted_content` = '{\"follow_up_date\":\"2025-07-09 12:36:21\",\"medication_frequency\":\"每日3次，饭后服用\",\"medication_details\":[{\"name\":\"阿莫西林胶囊\",\"dosage\":\"0.5g\",\"frequency\":\"每日3次\",\"duration\":\"7天\",\"notes\":\"饭后服用\"},{\"name\":\"布洛芬缓释胶囊\",\"dosage\":\"0.3g\",\"frequency\":\"每日2次\",\"duration\":\"5天\",\"notes\":\"疼痛时服用\"}],\"doctor_name\":\"张医生\",\"hospital_name\":\"市人民医院\",\"diagnosis\":\"急性上呼吸道感染\",\"confidence\":0.95,\"raw_text\":\"处方单原始文本内容...\"}' , `follow_up_date` = '2025-07-09 12:36:21' , `medication_frequency` = '每日3次，饭后服用' , `medication_details` = '[{\"name\":\"阿莫西林胶囊\",\"dosage\":\"0.5g\",\"frequency\":\"每日3次\",\"duration\":\"7天\",\"notes\":\"饭后服用\"},{\"name\":\"布洛芬缓释胶囊\",\"dosage\":\"0.3g\",\"frequency\":\"每日2次\",\"duration\":\"5天\",\"notes\":\"疼痛时服用\"}]' WHERE  `id` = 6 [ RunTime:0.000209s ]
+[2025-07-02T12:36:21+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 6 , 'follow_up' , '2025-07-08 12:36:21' , 0 , 'app' , '2025-07-02 12:36:21' , '2025-07-02 12:36:21') [ RunTime:0.000265s ]
+[2025-07-02T12:36:21+08:00][sql] PRAGMA table_info( 'reminder' ) [ RunTime:0.000021s ]
+[2025-07-02T12:36:21+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 6 , 'medication' , '2025-07-02 08:00:00' , 0 , 'app' , '2025-07-02 12:36:21' , '2025-07-02 12:36:21') [ RunTime:0.000243s ]
+[2025-07-02T12:36:21+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 6 , 'medication' , '2025-07-02 12:00:00' , 0 , 'app' , '2025-07-02 12:36:21' , '2025-07-02 12:36:21') [ RunTime:0.000251s ]
+[2025-07-02T12:36:21+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 6 , 'medication' , '2025-07-02 18:00:00' , 0 , 'app' , '2025-07-02 12:36:21' , '2025-07-02 12:36:21') [ RunTime:0.000233s ]
+[2025-07-02T12:36:21+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 6 , 'medication' , '2025-07-03 08:00:00' , 0 , 'app' , '2025-07-02 12:36:21' , '2025-07-02 12:36:21') [ RunTime:0.000243s ]
+[2025-07-02T12:36:21+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 6 , 'medication' , '2025-07-03 12:00:00' , 0 , 'app' , '2025-07-02 12:36:21' , '2025-07-02 12:36:21') [ RunTime:0.000259s ]
+[2025-07-02T12:36:21+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 6 , 'medication' , '2025-07-03 18:00:00' , 0 , 'app' , '2025-07-02 12:36:21' , '2025-07-02 12:36:21') [ RunTime:0.000201s ]
+[2025-07-02T12:36:21+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 6 , 'medication' , '2025-07-04 08:00:00' , 0 , 'app' , '2025-07-02 12:36:21' , '2025-07-02 12:36:21') [ RunTime:0.000294s ]
+[2025-07-02T12:36:21+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 6 , 'medication' , '2025-07-04 12:00:00' , 0 , 'app' , '2025-07-02 12:36:21' , '2025-07-02 12:36:21') [ RunTime:0.000205s ]
+[2025-07-02T12:36:21+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 6 , 'medication' , '2025-07-04 18:00:00' , 0 , 'app' , '2025-07-02 12:36:21' , '2025-07-02 12:36:21') [ RunTime:0.000199s ]
+[2025-07-02T12:36:21+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 6 , 'medication' , '2025-07-05 08:00:00' , 0 , 'app' , '2025-07-02 12:36:21' , '2025-07-02 12:36:21') [ RunTime:0.000247s ]
+[2025-07-02T12:36:21+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 6 , 'medication' , '2025-07-05 12:00:00' , 0 , 'app' , '2025-07-02 12:36:21' , '2025-07-02 12:36:21') [ RunTime:0.000247s ]
+[2025-07-02T12:36:21+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 6 , 'medication' , '2025-07-05 18:00:00' , 0 , 'app' , '2025-07-02 12:36:21' , '2025-07-02 12:36:21') [ RunTime:0.000240s ]
+[2025-07-02T12:36:21+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 6 , 'medication' , '2025-07-06 08:00:00' , 0 , 'app' , '2025-07-02 12:36:21' , '2025-07-02 12:36:21') [ RunTime:0.000239s ]
+[2025-07-02T12:36:21+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 6 , 'medication' , '2025-07-06 12:00:00' , 0 , 'app' , '2025-07-02 12:36:21' , '2025-07-02 12:36:21') [ RunTime:0.000233s ]
+[2025-07-02T12:36:21+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 6 , 'medication' , '2025-07-06 18:00:00' , 0 , 'app' , '2025-07-02 12:36:21' , '2025-07-02 12:36:21') [ RunTime:0.000264s ]
+[2025-07-02T12:36:21+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 6 , 'medication' , '2025-07-07 08:00:00' , 0 , 'app' , '2025-07-02 12:36:21' , '2025-07-02 12:36:21') [ RunTime:0.000205s ]
+[2025-07-02T12:36:21+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 6 , 'medication' , '2025-07-07 12:00:00' , 0 , 'app' , '2025-07-02 12:36:21' , '2025-07-02 12:36:21') [ RunTime:0.000213s ]
+[2025-07-02T12:36:21+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 6 , 'medication' , '2025-07-07 18:00:00' , 0 , 'app' , '2025-07-02 12:36:21' , '2025-07-02 12:36:21') [ RunTime:0.000257s ]
+[2025-07-02T12:36:21+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 6 , 'medication' , '2025-07-08 08:00:00' , 0 , 'app' , '2025-07-02 12:36:21' , '2025-07-02 12:36:21') [ RunTime:0.000228s ]
+[2025-07-02T12:36:21+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 6 , 'medication' , '2025-07-08 12:00:00' , 0 , 'app' , '2025-07-02 12:36:21' , '2025-07-02 12:36:21') [ RunTime:0.000201s ]
+[2025-07-02T12:36:21+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 6 , 'medication' , '2025-07-08 18:00:00' , 0 , 'app' , '2025-07-02 12:36:21' , '2025-07-02 12:36:21') [ RunTime:0.000240s ]
+[2025-07-02T12:36:21+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 6 , 'medication' , '2025-07-02 08:00:00' , 0 , 'app' , '2025-07-02 12:36:21' , '2025-07-02 12:36:21') [ RunTime:0.000241s ]
+[2025-07-02T12:36:21+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 6 , 'medication' , '2025-07-02 18:00:00' , 0 , 'app' , '2025-07-02 12:36:21' , '2025-07-02 12:36:21') [ RunTime:0.000235s ]
+[2025-07-02T12:36:21+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 6 , 'medication' , '2025-07-03 08:00:00' , 0 , 'app' , '2025-07-02 12:36:21' , '2025-07-02 12:36:21') [ RunTime:0.000210s ]
+[2025-07-02T12:36:21+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 6 , 'medication' , '2025-07-03 18:00:00' , 0 , 'app' , '2025-07-02 12:36:21' , '2025-07-02 12:36:21') [ RunTime:0.000204s ]
+[2025-07-02T12:36:21+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 6 , 'medication' , '2025-07-04 08:00:00' , 0 , 'app' , '2025-07-02 12:36:21' , '2025-07-02 12:36:21') [ RunTime:0.000207s ]
+[2025-07-02T12:36:21+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 6 , 'medication' , '2025-07-04 18:00:00' , 0 , 'app' , '2025-07-02 12:36:21' , '2025-07-02 12:36:21') [ RunTime:0.000321s ]
+[2025-07-02T12:36:21+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 6 , 'medication' , '2025-07-05 08:00:00' , 0 , 'app' , '2025-07-02 12:36:21' , '2025-07-02 12:36:21') [ RunTime:0.000207s ]
+[2025-07-02T12:36:21+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 6 , 'medication' , '2025-07-05 18:00:00' , 0 , 'app' , '2025-07-02 12:36:21' , '2025-07-02 12:36:21') [ RunTime:0.000251s ]
+[2025-07-02T12:36:21+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 6 , 'medication' , '2025-07-06 08:00:00' , 0 , 'app' , '2025-07-02 12:36:21' , '2025-07-02 12:36:21') [ RunTime:0.000203s ]
+[2025-07-02T12:36:21+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 6 , 'medication' , '2025-07-06 18:00:00' , 0 , 'app' , '2025-07-02 12:36:21' , '2025-07-02 12:36:21') [ RunTime:0.000222s ]
+[2025-07-02T12:36:21+08:00][warning] ThinkAI API密钥未配置，使用模拟数据
+[2025-07-02T12:36:21+08:00][info] 处方信息提取成功
+[2025-07-02T12:36:21+08:00][info] 处方提醒创建成功
+[2025-07-02T12:37:26+08:00][sql] CONNECT:[ UseTime:0.000106s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T12:37:26+08:00][sql] SELECT COUNT(*) AS think_count FROM `reminder` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000235s ]
+[2025-07-02T12:37:26+08:00][sql] SELECT * FROM `reminder` WHERE  `user_id` = 1 ORDER BY `reminder_time` DESC LIMIT 10 OFFSET 0 [ RunTime:0.000081s ]
+[2025-07-02T12:37:26+08:00][sql] SELECT * FROM `prescription` WHERE  `id` = 6 [ RunTime:0.000052s ]
+[2025-07-02T12:38:06+08:00][sql] CONNECT:[ UseTime:0.000099s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T12:38:06+08:00][sql] INSERT INTO `prescription` (`user_id` , `prescription_image` , `original_filename` , `file_size` , `status`) VALUES (1 , '20250702123806_6864b7ae469af.png' , 'test_prescription4.png' , 70 , 0) [ RunTime:0.000401s ]
+[2025-07-02T12:38:06+08:00][sql] PRAGMA table_info( 'prescription' ) [ RunTime:0.000021s ]
+[2025-07-02T12:38:06+08:00][sql] UPDATE `prescription` SET `status` = 1 , `extracted_content` = '{\"follow_up_date\":\"2025-07-09 12:38:06\",\"medication_frequency\":\"每日3次，饭后服用\",\"medication_details\":[{\"name\":\"阿莫西林胶囊\",\"dosage\":\"0.5g\",\"frequency\":\"每日3次\",\"duration\":\"7天\",\"notes\":\"饭后服用\"},{\"name\":\"布洛芬缓释胶囊\",\"dosage\":\"0.3g\",\"frequency\":\"每日2次\",\"duration\":\"5天\",\"notes\":\"疼痛时服用\"}],\"doctor_name\":\"张医生\",\"hospital_name\":\"市人民医院\",\"diagnosis\":\"急性上呼吸道感染\",\"confidence\":0.95,\"raw_text\":\"处方单原始文本内容...\"}' , `follow_up_date` = '2025-07-09 12:38:06' , `medication_frequency` = '每日3次，饭后服用' , `medication_details` = '[{\"name\":\"阿莫西林胶囊\",\"dosage\":\"0.5g\",\"frequency\":\"每日3次\",\"duration\":\"7天\",\"notes\":\"饭后服用\"},{\"name\":\"布洛芬缓释胶囊\",\"dosage\":\"0.3g\",\"frequency\":\"每日2次\",\"duration\":\"5天\",\"notes\":\"疼痛时服用\"}]' WHERE  `id` = 7 [ RunTime:0.000206s ]
+[2025-07-02T12:38:06+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `message` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 7 , 'follow_up' , '2025-07-08 12:38:06' , '复诊提醒：您有一个复诊预约，时间：2025-07-09 12:38:06，请及时前往医院复诊。' , 0 , 'app' , '2025-07-02 12:38:06' , '2025-07-02 12:38:06') [ RunTime:0.000266s ]
+[2025-07-02T12:38:06+08:00][sql] PRAGMA table_info( 'reminder' ) [ RunTime:0.000023s ]
+[2025-07-02T12:38:06+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `message` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 7 , 'medication' , '2025-07-02 08:00:00' , '用药提醒：请按时服用 阿莫西林胶囊 0.5g，饭后服用' , 0 , 'app' , '2025-07-02 12:38:06' , '2025-07-02 12:38:06') [ RunTime:0.000256s ]
+[2025-07-02T12:38:06+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `message` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 7 , 'medication' , '2025-07-02 12:00:00' , '用药提醒：请按时服用 阿莫西林胶囊 0.5g，饭后服用' , 0 , 'app' , '2025-07-02 12:38:06' , '2025-07-02 12:38:06') [ RunTime:0.000228s ]
+[2025-07-02T12:38:06+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `message` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 7 , 'medication' , '2025-07-02 18:00:00' , '用药提醒：请按时服用 阿莫西林胶囊 0.5g，饭后服用' , 0 , 'app' , '2025-07-02 12:38:06' , '2025-07-02 12:38:06') [ RunTime:0.000241s ]
+[2025-07-02T12:38:06+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `message` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 7 , 'medication' , '2025-07-03 08:00:00' , '用药提醒：请按时服用 阿莫西林胶囊 0.5g，饭后服用' , 0 , 'app' , '2025-07-02 12:38:06' , '2025-07-02 12:38:06') [ RunTime:0.000242s ]
+[2025-07-02T12:38:06+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `message` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 7 , 'medication' , '2025-07-03 12:00:00' , '用药提醒：请按时服用 阿莫西林胶囊 0.5g，饭后服用' , 0 , 'app' , '2025-07-02 12:38:06' , '2025-07-02 12:38:06') [ RunTime:0.000221s ]
+[2025-07-02T12:38:06+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `message` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 7 , 'medication' , '2025-07-03 18:00:00' , '用药提醒：请按时服用 阿莫西林胶囊 0.5g，饭后服用' , 0 , 'app' , '2025-07-02 12:38:06' , '2025-07-02 12:38:06') [ RunTime:0.000211s ]
+[2025-07-02T12:38:06+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `message` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 7 , 'medication' , '2025-07-04 08:00:00' , '用药提醒：请按时服用 阿莫西林胶囊 0.5g，饭后服用' , 0 , 'app' , '2025-07-02 12:38:06' , '2025-07-02 12:38:06') [ RunTime:0.000230s ]
+[2025-07-02T12:38:06+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `message` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 7 , 'medication' , '2025-07-04 12:00:00' , '用药提醒：请按时服用 阿莫西林胶囊 0.5g，饭后服用' , 0 , 'app' , '2025-07-02 12:38:06' , '2025-07-02 12:38:06') [ RunTime:0.000247s ]
+[2025-07-02T12:38:06+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `message` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 7 , 'medication' , '2025-07-04 18:00:00' , '用药提醒：请按时服用 阿莫西林胶囊 0.5g，饭后服用' , 0 , 'app' , '2025-07-02 12:38:06' , '2025-07-02 12:38:06') [ RunTime:0.000205s ]
+[2025-07-02T12:38:06+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `message` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 7 , 'medication' , '2025-07-05 08:00:00' , '用药提醒：请按时服用 阿莫西林胶囊 0.5g，饭后服用' , 0 , 'app' , '2025-07-02 12:38:06' , '2025-07-02 12:38:06') [ RunTime:0.000256s ]
+[2025-07-02T12:38:06+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `message` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 7 , 'medication' , '2025-07-05 12:00:00' , '用药提醒：请按时服用 阿莫西林胶囊 0.5g，饭后服用' , 0 , 'app' , '2025-07-02 12:38:06' , '2025-07-02 12:38:06') [ RunTime:0.000235s ]
+[2025-07-02T12:38:06+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `message` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 7 , 'medication' , '2025-07-05 18:00:00' , '用药提醒：请按时服用 阿莫西林胶囊 0.5g，饭后服用' , 0 , 'app' , '2025-07-02 12:38:06' , '2025-07-02 12:38:06') [ RunTime:0.000232s ]
+[2025-07-02T12:38:06+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `message` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 7 , 'medication' , '2025-07-06 08:00:00' , '用药提醒：请按时服用 阿莫西林胶囊 0.5g，饭后服用' , 0 , 'app' , '2025-07-02 12:38:06' , '2025-07-02 12:38:06') [ RunTime:0.000209s ]
+[2025-07-02T12:38:06+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `message` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 7 , 'medication' , '2025-07-06 12:00:00' , '用药提醒：请按时服用 阿莫西林胶囊 0.5g，饭后服用' , 0 , 'app' , '2025-07-02 12:38:06' , '2025-07-02 12:38:06') [ RunTime:0.000239s ]
+[2025-07-02T12:38:06+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `message` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 7 , 'medication' , '2025-07-06 18:00:00' , '用药提醒：请按时服用 阿莫西林胶囊 0.5g，饭后服用' , 0 , 'app' , '2025-07-02 12:38:06' , '2025-07-02 12:38:06') [ RunTime:0.000204s ]
+[2025-07-02T12:38:06+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `message` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 7 , 'medication' , '2025-07-07 08:00:00' , '用药提醒：请按时服用 阿莫西林胶囊 0.5g，饭后服用' , 0 , 'app' , '2025-07-02 12:38:06' , '2025-07-02 12:38:06') [ RunTime:0.000263s ]
+[2025-07-02T12:38:06+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `message` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 7 , 'medication' , '2025-07-07 12:00:00' , '用药提醒：请按时服用 阿莫西林胶囊 0.5g，饭后服用' , 0 , 'app' , '2025-07-02 12:38:06' , '2025-07-02 12:38:06') [ RunTime:0.000203s ]
+[2025-07-02T12:38:06+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `message` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 7 , 'medication' , '2025-07-07 18:00:00' , '用药提醒：请按时服用 阿莫西林胶囊 0.5g，饭后服用' , 0 , 'app' , '2025-07-02 12:38:06' , '2025-07-02 12:38:06') [ RunTime:0.000265s ]
+[2025-07-02T12:38:06+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `message` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 7 , 'medication' , '2025-07-08 08:00:00' , '用药提醒：请按时服用 阿莫西林胶囊 0.5g，饭后服用' , 0 , 'app' , '2025-07-02 12:38:06' , '2025-07-02 12:38:06') [ RunTime:0.000211s ]
+[2025-07-02T12:38:06+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `message` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 7 , 'medication' , '2025-07-08 12:00:00' , '用药提醒：请按时服用 阿莫西林胶囊 0.5g，饭后服用' , 0 , 'app' , '2025-07-02 12:38:06' , '2025-07-02 12:38:06') [ RunTime:0.000211s ]
+[2025-07-02T12:38:06+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `message` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 7 , 'medication' , '2025-07-08 18:00:00' , '用药提醒：请按时服用 阿莫西林胶囊 0.5g，饭后服用' , 0 , 'app' , '2025-07-02 12:38:06' , '2025-07-02 12:38:06') [ RunTime:0.000265s ]
+[2025-07-02T12:38:06+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `message` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 7 , 'medication' , '2025-07-02 08:00:00' , '用药提醒：请按时服用 布洛芬缓释胶囊 0.3g，疼痛时服用' , 0 , 'app' , '2025-07-02 12:38:06' , '2025-07-02 12:38:06') [ RunTime:0.000212s ]
+[2025-07-02T12:38:06+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `message` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 7 , 'medication' , '2025-07-02 18:00:00' , '用药提醒：请按时服用 布洛芬缓释胶囊 0.3g，疼痛时服用' , 0 , 'app' , '2025-07-02 12:38:06' , '2025-07-02 12:38:06') [ RunTime:0.000234s ]
+[2025-07-02T12:38:06+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `message` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 7 , 'medication' , '2025-07-03 08:00:00' , '用药提醒：请按时服用 布洛芬缓释胶囊 0.3g，疼痛时服用' , 0 , 'app' , '2025-07-02 12:38:06' , '2025-07-02 12:38:06') [ RunTime:0.000270s ]
+[2025-07-02T12:38:06+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `message` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 7 , 'medication' , '2025-07-03 18:00:00' , '用药提醒：请按时服用 布洛芬缓释胶囊 0.3g，疼痛时服用' , 0 , 'app' , '2025-07-02 12:38:06' , '2025-07-02 12:38:06') [ RunTime:0.000276s ]
+[2025-07-02T12:38:06+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `message` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 7 , 'medication' , '2025-07-04 08:00:00' , '用药提醒：请按时服用 布洛芬缓释胶囊 0.3g，疼痛时服用' , 0 , 'app' , '2025-07-02 12:38:06' , '2025-07-02 12:38:06') [ RunTime:0.000238s ]
+[2025-07-02T12:38:06+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `message` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 7 , 'medication' , '2025-07-04 18:00:00' , '用药提醒：请按时服用 布洛芬缓释胶囊 0.3g，疼痛时服用' , 0 , 'app' , '2025-07-02 12:38:06' , '2025-07-02 12:38:06') [ RunTime:0.000247s ]
+[2025-07-02T12:38:06+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `message` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 7 , 'medication' , '2025-07-05 08:00:00' , '用药提醒：请按时服用 布洛芬缓释胶囊 0.3g，疼痛时服用' , 0 , 'app' , '2025-07-02 12:38:06' , '2025-07-02 12:38:06') [ RunTime:0.000267s ]
+[2025-07-02T12:38:06+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `message` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 7 , 'medication' , '2025-07-05 18:00:00' , '用药提醒：请按时服用 布洛芬缓释胶囊 0.3g，疼痛时服用' , 0 , 'app' , '2025-07-02 12:38:06' , '2025-07-02 12:38:06') [ RunTime:0.000270s ]
+[2025-07-02T12:38:06+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `message` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 7 , 'medication' , '2025-07-06 08:00:00' , '用药提醒：请按时服用 布洛芬缓释胶囊 0.3g，疼痛时服用' , 0 , 'app' , '2025-07-02 12:38:06' , '2025-07-02 12:38:06') [ RunTime:0.000248s ]
+[2025-07-02T12:38:06+08:00][sql] INSERT INTO `reminder` (`user_id` , `prescription_id` , `reminder_type` , `reminder_time` , `message` , `status` , `send_method` , `create_time` , `update_time`) VALUES (1 , 7 , 'medication' , '2025-07-06 18:00:00' , '用药提醒：请按时服用 布洛芬缓释胶囊 0.3g，疼痛时服用' , 0 , 'app' , '2025-07-02 12:38:06' , '2025-07-02 12:38:06') [ RunTime:0.000216s ]
+[2025-07-02T12:38:06+08:00][warning] ThinkAI API密钥未配置，使用模拟数据
+[2025-07-02T12:38:06+08:00][info] 处方信息提取成功
+[2025-07-02T12:38:06+08:00][info] 处方提醒创建成功
+[2025-07-02T12:40:20+08:00][sql] CONNECT:[ UseTime:0.000135s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T12:40:20+08:00][sql] SELECT COUNT(*) AS think_count FROM `reminder` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000402s ]
+[2025-07-02T12:40:20+08:00][sql] SELECT * FROM `reminder` WHERE  `user_id` = 1 ORDER BY `reminder_time` DESC LIMIT 10 OFFSET 0 [ RunTime:0.000148s ]
+[2025-07-02T12:40:20+08:00][sql] SELECT * FROM `prescription` WHERE  `id` IN (6,7) [ RunTime:0.000093s ]
+[2025-07-02T12:40:31+08:00][sql] CONNECT:[ UseTime:0.000115s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T12:40:31+08:00][sql] SELECT COUNT(*) AS think_count FROM `reminder` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000248s ]
+[2025-07-02T12:40:31+08:00][sql] SELECT * FROM `reminder` WHERE  `user_id` = 1 ORDER BY `reminder_time` DESC LIMIT 10 OFFSET 0 [ RunTime:0.000096s ]
+[2025-07-02T12:40:31+08:00][sql] SELECT * FROM `prescription` WHERE  `id` IN (6,7) [ RunTime:0.000064s ]
+[2025-07-02T12:40:50+08:00][sql] CONNECT:[ UseTime:0.000119s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T12:40:50+08:00][sql] SELECT COUNT(*) AS think_count FROM `reminder` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000328s ]
+[2025-07-02T12:40:50+08:00][sql] SELECT * FROM `reminder` WHERE  `user_id` = 1 ORDER BY `reminder_time` DESC LIMIT 10 OFFSET 0 [ RunTime:0.000127s ]
+[2025-07-02T12:40:50+08:00][sql] SELECT * FROM `prescription` WHERE  `id` IN (6,7) [ RunTime:0.000084s ]
+[2025-07-02T12:40:55+08:00][sql] CONNECT:[ UseTime:0.000129s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T12:40:55+08:00][sql] SELECT COUNT(*) AS think_count FROM `reminder` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000302s ]
+[2025-07-02T12:40:55+08:00][sql] SELECT * FROM `reminder` WHERE  `user_id` = 1 ORDER BY `reminder_time` DESC LIMIT 10 OFFSET 0 [ RunTime:0.000130s ]
+[2025-07-02T12:40:55+08:00][sql] SELECT * FROM `prescription` WHERE  `id` IN (6,7) [ RunTime:0.000098s ]
+[2025-07-02T13:50:29+08:00][error] [0]模板文件不存在:/workspace/medicalsystem/app/view/index/index.php[/workspace/medicalsystem/vendor/topthink/framework/src/think/view/driver/Php.php:81]
+[2025-07-02T13:50:39+08:00][error] [0]template not exists:/workspace/medicalsystem/app/view/index/index.php[/workspace/medicalsystem/vendor/topthink/framework/src/think/view/driver/Php.php:81]
+[2025-07-02T13:52:22+08:00][error] [0]语法错误: unexpected identifier "肠道方面的遗传性疾病", expecting ";"[/workspace/medicalsystem/app/controller/ColonScreening.php:241]
+[2025-07-02T13:52:45+08:00][error] [0]app\controller\ColonScreening::index(): Return value must be of type think\Response, string returned[/workspace/medicalsystem/app/controller/ColonScreening.php:31]
+[2025-07-02T13:53:53+08:00][sql] CONNECT:[ UseTime:0.010545s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T13:53:53+08:00][error] 肠癌早筛提交失败: SQLSTATE[HY000]: General error: 1 no such table: colon_cancer_screening
+[2025-07-02T13:54:46+08:00][sql] CONNECT:[ UseTime:0.000102s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T13:54:46+08:00][error] 肠癌早筛提交失败: SQLSTATE[HY000]: General error: 1 no such table: colon_cancer_screening
+[2025-07-02T13:55:16+08:00][sql] CONNECT:[ UseTime:0.000167s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T13:55:16+08:00][sql] SELECT name FROM sqlite_master WHERE type="table" [ RunTime:0.000310s ]
+[2025-07-02T13:55:30+08:00][sql] CONNECT:[ UseTime:0.000163s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T13:55:30+08:00][sql] 
+    CREATE TABLE IF NOT EXISTS colon_cancer_screening (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        user_id INTEGER NOT NULL DEFAULT 1,
+        name VARCHAR(100) NOT NULL,
+        contact VARCHAR(200) NOT NULL,
+        age VARCHAR(50) NOT NULL,
+        gender VARCHAR(10) NOT NULL,
+        smoking VARCHAR(10) NOT NULL,
+        height DECIMAL(5,2) NOT NULL,
+        weight DECIMAL(5,2) NOT NULL,
+        bmi DECIMAL(5,2) NOT NULL,
+        bmi_category VARCHAR(20) NOT NULL,
+        first_degree_rel VARCHAR(10) NOT NULL,
+        colorectal_cancer VARCHAR(100) NOT NULL,
+        genetic_disease VARCHAR(10) NOT NULL,
+        risk_score INTEGER NOT NULL DEFAULT 0,
+        risk_level VARCHAR(20) NOT NULL DEFAULT '',
+        ai_analysis TEXT,
+        recommendations TEXT,
+        create_time DATETIME DEFAULT CURRENT_TIMESTAMP,
+        update_time DATETIME DEFAULT CURRENT_TIMESTAMP
+    ); [ RunTime:0.009716s ]
+[2025-07-02T13:55:30+08:00][sql] SELECT name FROM sqlite_master WHERE type="table" AND name="colon_cancer_screening" [ RunTime:0.000067s ]
+[2025-07-02T13:55:53+08:00][sql] CONNECT:[ UseTime:0.000109s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T13:55:53+08:00][sql] INSERT INTO `colon_cancer_screening` (`user_id` , `name` , `contact` , `age` , `gender` , `smoking` , `height` , `weight` , `bmi` , `bmi_category` , `first_degree_rel` , `colorectal_cancer` , `genetic_disease` , `risk_score` , `risk_level` , `ai_analysis` , `recommendations` , `create_time` , `update_time`) VALUES (1 , '张三' , '13800138000' , '50-59岁' , '男性' , '无' , '175' , '70' , '22.86' , '小于23' , '没有' , '没有' , '否' , 3 , '低风险' , '### 1. 肠癌风险评估
+**低风险**
+
+### 2. 详细的风险分析
+根据提供的信息，张三的肠癌风险评估为低风险。以下是具体因素及其对风险的影响：
+
+- **年龄（50-59岁）**：随着年龄的增长，结直肠癌的风险也会增加。尽管如此，张三的年龄仍然处于相对较低风险范围内。
+  
+- **性别（男性）**：男性比女性患结直肠癌的风险略高，但这一因素在综合考量下对张三的总体风险影响不大。
+
+- **吸烟史（无）**：吸烟是结直肠癌的风险因素之一，但张三没有吸烟史，这降低了他患病的风险。
+
+- **BMI（22.86，分类为小于23）**：正常体重或稍偏瘦的人群患结直肠癌的风险较低。张三的BMI值处于正常范围，有助于降低风险。
+
+- **一级亲属结直肠癌史（无）**：一级亲属中没有结直肠癌病史，这意味着遗传性因素对张三的影响较小。
+
+- **遗传性疾病（无）**：没有遗传性疾病进一步降低了张三的患病风险。
+
+### 3. 针对性的建议
+
+#### 生活方式调整
+- **保持健康饮食**：多吃蔬菜、水果和全谷物食品，减少红肉和加工肉类的摄入。
+- **定期运动**：每周至少进行150分钟的中等强度运动，如快步走、游泳或骑自行车。
+
+#### 筛查建议
+- **定期体检**：虽然目前风险较低，但随着年龄增长，建议从50岁开始定期进行结直肠癌筛查，例如每十年一次的结肠镜检查。
+
+### 4. 其他相关健康建议
+- **避免酒精**：限制饮酒量可以进一步降低患结直肠癌的风险。
+- **维持健康的生活习惯**：避免久坐不动，尽量保持活跃的生活方式。
+- **心理健康**：保持良好的心理状态，减少压力，也有助于整体健康。
+
+通过上述措施，可以有效维持和提高张三的健康水平，减少结直肠癌的发生风险。' , '[\"您的肠癌风险较低\",\"建议保持健康的生活方式\",\"定期进行体检\",\"保持均衡饮食，多吃蔬菜水果\",\"适量运动，戒烟限酒\"]' , '2025-07-02 13:55:53.194999' , '2025-07-02 13:55:53.195010') [ RunTime:0.000388s ]
+[2025-07-02T13:55:53+08:00][sql] PRAGMA table_info( 'colon_cancer_screening' ) [ RunTime:0.000020s ]
+[2025-07-02T13:56:43+08:00][sql] CONNECT:[ UseTime:0.000119s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T13:56:43+08:00][sql] INSERT INTO `colon_cancer_screening` (`user_id` , `name` , `contact` , `age` , `gender` , `smoking` , `height` , `weight` , `bmi` , `bmi_category` , `first_degree_rel` , `colorectal_cancer` , `genetic_disease` , `risk_score` , `risk_level` , `ai_analysis` , `recommendations` , `create_time` , `update_time`) VALUES (1 , '李四' , '13900139000' , '50-59岁' , '女性' , '无' , '165' , '55' , '20.2' , '小于23' , '没有' , '没有' , '否' , 2 , '低风险' , '### 1. 肠癌风险评估
+根据提供的信息，李四女士的肠癌风险评估为**低**。
+
+### 2. 风险分析
+- **年龄**：50-59岁是肠癌风险增加的一个年龄段，但并非高风险。
+- **性别**：女性患肠癌的风险低于男性，但仍然需要关注。
+- **吸烟史**：无吸烟史，这降低了肠癌的风险。
+- **BMI**：BMI为20.20，属于正常范围（18.5-24.9），过重或肥胖是肠癌的风险因素之一。
+- **一级亲属结直肠癌史**：无家族病史，家族中有肠癌病史会增加个体患病的风险。
+- **遗传性疾病**：无遗传性肠癌综合症，如家族性腺瘤息肉病或林奇综合征等，这些疾病显著增加了肠癌的风险。
+
+### 3. 针对性的建议
+- **生活方式调整**：
+  - 继续保持健康的饮食习惯，多吃蔬菜、水果和全谷物食品。
+  - 保持适量的体育活动，每周至少150分钟的中等强度运动。
+  - 避免过度饮酒，如果饮酒应适量。
+  
+- **筛查建议**：
+  - 建议从50岁开始定期进行肠癌筛查，具体筛查方法可咨询医生，常见的有粪便隐血试验、结肠镜检查等。
+  - 根据个人健康状况和家族史，与医生讨论是否需要提前进行筛查。
+
+### 4. 其他相关健康建议
+- 定期体检：通过定期体检可以早期发现潜在健康问题。
+- 心理健康：保持良好的心态，减少压力，这对整体健康都有益处。
+- 增强免疫力：通过均衡饮食、充足睡眠和适量运动来增强身体免疫力。
+
+以上建议基于提供的信息，并考虑到一般人群中的健康指导原则。具体情况还需要结合个人健康状况及医生的专业意见。' , '[\"您的肠癌风险较低\",\"建议保持健康的生活方式\",\"定期进行体检\",\"保持均衡饮食，多吃蔬菜水果\",\"适量运动，戒烟限酒\"]' , '2025-07-02 13:56:43.233777' , '2025-07-02 13:56:43.233788') [ RunTime:0.000452s ]
+[2025-07-02T13:56:43+08:00][sql] PRAGMA table_info( 'colon_cancer_screening' ) [ RunTime:0.000018s ]
+[2025-07-02T15:56:19+08:00][sql] CONNECT:[ UseTime:0.014560s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T15:56:19+08:00][sql] INSERT INTO `colon_cancer_screening` (`user_id` , `name` , `contact` , `age` , `gender` , `smoking` , `height` , `weight` , `bmi` , `bmi_category` , `first_degree_rel` , `colorectal_cancer` , `genetic_disease` , `risk_score` , `risk_level` , `ai_analysis` , `recommendations` , `create_time` , `update_time`) VALUES (1 , '李四' , '13900139000' , '50-59岁' , '女性' , '无' , '165' , '60' , '22.04' , '小于23' , '没有' , '没有' , '否' , 2 , '低风险' , '好的，根据您提供的信息，我们将从几个关键因素来评估李四女士的肠癌风险，并提供相应的建议。
+
+### 1. 肠癌风险评估
+**低风险**
+
+### 2. 风险分析
+- **年龄**：虽然50-59岁的年龄段是肠癌发病率较高的时期，但考虑到其他风险因素较低，整体风险仍被评估为低。
+- **性别**：女性患肠癌的风险相对男性较低。
+- **吸烟史**：无吸烟史，这是一个积极的因素，因为吸烟会增加多种癌症的风险，包括肠癌。
+- **BMI**：BMI值为22.038567493113，属于正常范围（小于23），这表明体重管理得当，降低了因肥胖带来的肠癌风险。
+- **一级亲属结直肠癌史**：没有一级亲属患有结直肠癌的历史，减少了遗传因素带来的风险。
+- **遗传性疾病**：没有遗传性疾病，进一步降低了遗传性肠癌的风险。
+
+### 3. 针对性的建议
+- **生活方式调整**：
+  - 继续保持健康的饮食习惯，多吃富含纤维的食物如蔬菜、水果等。
+  - 保持适量的身体活动，比如每周至少150分钟的中等强度运动。
+  - 避免过量饮酒，如果饮酒的话。
+  
+- **筛查建议**：
+  - 尽管当前评估为低风险，但考虑到年龄因素，建议在50岁左右开始进行肠癌筛查，如大便隐血试验、结肠镜检查等，具体筛查方法应遵医嘱。
+  
+### 4. 其他相关健康建议
+- 定期体检，特别是对于有家族病史或其他风险因素的人群，即使本次评估为低风险，定期检查也是预防疾病的有效手段。
+- 保持良好的生活习惯，避免已知的致癌因素，如吸烟、过量饮酒等。
+- 注意身体变化，如有异常应及时就医检查。
+
+希望这些信息对您有所帮助。如果有更多问题或需要进一步的个性化医疗建议，请咨询专业医生。' , '[\"您的肠癌风险较低\",\"建议保持健康的生活方式\",\"定期进行体检\",\"保持均衡饮食，多吃蔬菜水果\",\"适量运动，戒烟限酒\"]' , '2025-07-02 15:56:19.882712' , '2025-07-02 15:56:19.882726') [ RunTime:0.016439s ]
+[2025-07-02T15:56:19+08:00][sql] PRAGMA table_info( 'colon_cancer_screening' ) [ RunTime:0.000046s ]
+[2025-07-02T15:58:02+08:00][sql] CONNECT:[ UseTime:0.000179s ] sqlite:/workspace/medicalsystem/runtime/medical_system.db
+[2025-07-02T15:58:02+08:00][sql] PRAGMA table_info( 'colon_cancer_screening' ) [ RunTime:0.000325s ]
+[2025-07-02T15:58:02+08:00][sql] SELECT * FROM `colon_cancer_screening` [ RunTime:0.001685s ]
+[2025-07-02T16:03:31+08:00][error] [0]Class "think\facade\Filesystem" not found[/workspace/medicalsystem/app/controller/Meal.php:45]
+[2025-07-02T16:04:08+08:00][warning] 通义千问图片识别功能需要多模态API，当前使用文本分析模拟

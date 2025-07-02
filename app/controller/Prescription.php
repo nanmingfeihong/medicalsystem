@@ -6,6 +6,7 @@ namespace app\controller;
 use app\BaseController;
 use app\model\Prescription as PrescriptionModel;
 use app\service\ThinkAIService;
+use app\service\ReminderService;
 use think\exception\ValidateException;
 use think\facade\Log;
 use think\Request;
@@ -45,17 +46,24 @@ class Prescription extends BaseController
             // 调用AI服务提取处方信息
             $this->extractPrescriptionInfo($prescription);
             
-            return $this->success([
-                'prescription_id' => $prescription->id,
-                'status' => $prescription->status,
-                'image_url' => $prescription->image_url
-            ], '处方上传成功');
+            // 自动创建提醒
+            $this->createRemindersForPrescription($prescription);
+            
+            return json([
+                'code' => 200,
+                'message' => '处方上传成功',
+                'data' => [
+                    'prescription_id' => $prescription->id,
+                    'status' => $prescription->status,
+                    'image_url' => $prescription->image_url
+                ]
+            ]);
             
         } catch (ValidateException $e) {
-            return $this->error($e->getError(), 400);
+            return json(['code' => 400, 'message' => $e->getError(), 'data' => null]);
         } catch (\Exception $e) {
             Log::error('处方上传失败: ' . $e->getMessage());
-            return $this->error('处方上传失败，请稍后重试', 500);
+            return json(['code' => 500, 'message' => '处方上传失败，请稍后重试', 'data' => null]);
         }
     }
     
@@ -68,13 +76,28 @@ class Prescription extends BaseController
     }
     
     /**
-     * 获取处方详情
+     * 显示处方列表页面
+     */
+    public function index()
+    {
+        return view('prescription/list');
+    }
+    
+    /**
+     * 显示处方详情页面
+     */
+    public function show($id = null)
+    {
+        return view('prescription/detail');
+    }
+    
+    /**
+     * 获取处方详情（API接口）
      */
     public function detail($id = null)
     {
         // 调试信息
-        Log::info('处方详情方法调用，参数: ' . var_export($id, true));
-        error_log('处方详情方法调用，参数: ' . var_export($id, true));
+        Log::info('获取处方详情，ID: ' . $id);
         
         if (empty($id)) {
             return json(['code' => 400, 'message' => '处方ID不能为空', 'data' => null]);
@@ -123,22 +146,27 @@ class Prescription extends BaseController
         
         try {
             $prescriptions = PrescriptionModel::where('user_id', $userId)
-                ->order('created_at', 'desc')
+                ->order('create_time', 'desc')
                 ->paginate([
                     'list_rows' => $limit,
                     'page' => $page
                 ]);
             
-            return $this->paginate(
-                $prescriptions->items(),
-                $prescriptions->total(),
-                $page,
-                $limit
-            );
+            return json([
+                'code' => 200,
+                'message' => '获取成功',
+                'data' => [
+                    'list' => $prescriptions->items(),
+                    'total' => $prescriptions->total(),
+                    'page' => $page,
+                    'limit' => $limit,
+                    'pages' => ceil($prescriptions->total() / $limit)
+                ]
+            ]);
             
         } catch (\Exception $e) {
             Log::error('获取处方列表失败: ' . $e->getMessage());
-            return $this->error('获取处方列表失败', 500);
+            return json(['code' => 500, 'message' => '获取处方列表失败', 'data' => null]);
         }
     }
     
@@ -256,6 +284,29 @@ class Prescription extends BaseController
             ]);
             
             throw $e;
+        }
+    }
+    
+    /**
+     * 为处方创建提醒
+     */
+    private function createRemindersForPrescription(PrescriptionModel $prescription)
+    {
+        try {
+            $reminderService = new ReminderService();
+            $reminders = $reminderService->createRemindersFromPrescription($prescription);
+            
+            Log::info('处方提醒创建成功', [
+                'prescription_id' => $prescription->id,
+                'reminder_count' => count($reminders)
+            ]);
+            
+        } catch (\Exception $e) {
+            // 提醒创建失败不影响处方上传
+            Log::error('处方提醒创建失败', [
+                'prescription_id' => $prescription->id,
+                'error' => $e->getMessage()
+            ]);
         }
     }
 }
