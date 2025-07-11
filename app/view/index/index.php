@@ -28,10 +28,22 @@
         }
         
         .header {
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
             color: white;
             padding: 40px;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .header::before {
+            content: "健康";
+            position: absolute;
+            font-size: 120px;
+            opacity: 0.1;
+            font-weight: bold;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
         
         .header h1 {
@@ -53,21 +65,35 @@
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
             margin-bottom: 50px;
+            position: relative;
         }
-        
+        .features::before {
+            content: "福";
+            position: absolute;
+            font-size: 200px;
+            opacity: 0.05;
+            font-weight: bold;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+        }
         .feature-card {
+            position: relative;
+            z-index: 1;
             background: #f8f9fa;
             border-radius: 15px;
             padding: 30px;
             text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: all 0.3s ease;
             border: 2px solid transparent;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
         }
         
         .feature-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-            border-color: #4facfe;
+            box-shadow: 0 15px 30px rgba(231, 76, 60, 0.15);
+            border-color: #e74c3c;
         }
         
         .feature-icon {

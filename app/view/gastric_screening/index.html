@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>胃癌早筛问卷</title>
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .btn-submit {
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn-submit:hover {
+            background-color: #c0392b;
+        }
+        .risk-factors {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>胃癌早筛问卷</h1>
+        <form id="screeningForm">
+            <!-- Form fields same as previous implementation -->
+            <!-- ... -->
+        </form>
+        
+        <div class="risk-factors">
+            <h3>胃癌风险因素说明</h3>
+            <p>以下因素可能增加胃癌风险：</p>
+            <ul>
+                <li>年龄≥45岁</li>
+                <li>男性</li>
+                <li>高发地区居住史（辽宁、福建、甘肃、山东、江苏）</li>
+                <li>吸烟、饮酒</li>
+                <li>高盐、腌制食品摄入</li>
+                <li>幽门螺杆菌感染</li>
+                <li>胃部疾病史</li>
+                <li>家族胃癌史</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        document.getElementById('screeningForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            
+            axios.post('/gastric_screening/submit', formData)
+                .then(response => {
+                    if (response.data.code === 1) {
+                        window.location.href = `/gastric_screening/result?id=${response.data.data.id}`;
+                    } else {
+                        alert(response.data.message);
+                    }
+                })
+                .catch(error => {
+                    console.error(error);
+                    alert('提交失败，请稍后重试');
+                });
+        });
+    </script>
+</body>
+</html>
